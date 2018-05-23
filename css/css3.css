@@ -1,0 +1,32 @@
+.container-fluid#c7{
+  padding-top: 10%;
+  height: 700px;
+  /* background: blue; */
+}
+.icon li{
+	font-size:20px;
+	list-style-type:none;
+	text-align: center;
+	display:inline;
+}
+.icon li a {
+	color:black;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+.icon ul{
+
+	display: inline-block;
+	position:relative;
+}
+#title{
+  font-family: 微軟正黑體;
+}
+#form{
+  width: 650px;
+  margin-left: 430px;
+  margin-top: 4%;
+  font-family: 微軟正黑體;
+  font-size: 16px;
+  /* background: blue; */
+}

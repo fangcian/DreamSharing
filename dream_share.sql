@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機: 127.0.0.1:3306
--- 產生時間： 2018-05-09 07:33:50
+-- 產生時間： 2018 年 05 月 25 日 02:54
 -- 伺服器版本: 5.7.19
--- PHP 版本： 5.6.31
+-- PHP 版本： 7.1.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -29,8 +29,8 @@ USE `dream_share`;
 --
 -- 資料表結構 `analysis`
 --
--- 建立時間: 2018-05-09 07:23:57
--- 最後更新: 2018-05-09 07:23:57
+-- 建立時間: 2018 年 05 月 23 日 07:36
+-- 最後更新: 2018 年 05 月 23 日 07:36
 --
 
 DROP TABLE IF EXISTS `analysis`;
@@ -51,9 +51,8 @@ TRUNCATE TABLE `analysis`;
 --
 -- 資料表結構 `dreams`
 --
--- 建立時間: 2018-05-09 07:23:44
--- 最後更新: 2018-05-09 07:23:44
--- 最後檢查: 2018-05-09 07:23:44
+-- 建立時間: 2018 年 05 月 23 日 07:36
+-- 最後更新: 2018 年 05 月 23 日 07:36
 --
 
 DROP TABLE IF EXISTS `dreams`;
@@ -76,35 +75,56 @@ TRUNCATE TABLE `dreams`;
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `favorite`
+-- 資料表結構 `favorites`
 --
--- 建立時間: 2018-05-09 07:26:41
--- 最後更新: 2018-05-09 07:26:41
--- 最後檢查: 2018-05-09 07:26:41
+-- 建立時間: 2018 年 05 月 23 日 07:36
+-- 最後更新: 2018 年 05 月 23 日 07:36
 --
 
-DROP TABLE IF EXISTS `favorite`;
-CREATE TABLE IF NOT EXISTS `favorite` (
-  `fid` varchar(20) NOT NULL,
+DROP TABLE IF EXISTS `favorites`;
+CREATE TABLE IF NOT EXISTS `favorites` (
+  `fid` int(20) NOT NULL,
   `flag` varchar(20) NOT NULL,
   `account` varchar(20) NOT NULL,
-  PRIMARY KEY (`fid`,`account`),
+  `article_id` varchar(20) NOT NULL,
+  PRIMARY KEY (`fid`),
   KEY `account` (`account`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- 資料表新增前先清除舊資料 `favorite`
+-- 資料表新增前先清除舊資料 `favorites`
 --
 
-TRUNCATE TABLE `favorite`;
+TRUNCATE TABLE `favorites`;
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `migrations`
+--
+-- 建立時間: 2018 年 05 月 23 日 07:58
+-- 最後更新: 2018 年 05 月 23 日 07:58
+--
+
+DROP TABLE IF EXISTS `migrations`;
+CREATE TABLE IF NOT EXISTS `migrations` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `batch` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- 資料表新增前先清除舊資料 `migrations`
+--
+
+TRUNCATE TABLE `migrations`;
 -- --------------------------------------------------------
 
 --
 -- 資料表結構 `replys`
 --
--- 建立時間: 2018-05-09 07:33:05
--- 最後更新: 2018-05-09 07:33:05
--- 最後檢查: 2018-05-09 07:33:05
+-- 建立時間: 2018 年 05 月 23 日 07:36
+-- 最後更新: 2018 年 05 月 23 日 07:36
 --
 
 DROP TABLE IF EXISTS `replys`;
@@ -129,25 +149,36 @@ TRUNCATE TABLE `replys`;
 --
 -- 資料表結構 `users`
 --
--- 建立時間: 2018-05-09 07:24:28
--- 最後更新: 2018-05-09 07:24:28
+-- 建立時間: 2018 年 05 月 23 日 07:58
+-- 最後更新: 2018 年 05 月 23 日 07:58
 --
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
-  `account` varchar(20) NOT NULL,
-  `name` varchar(20) NOT NULL,
-  `email` varchar(20) NOT NULL,
-  `sex` char(2) NOT NULL,
-  `passwd` varchar(20) NOT NULL,
-  PRIMARY KEY (`account`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `account` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sex` varchar(2) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- 資料表新增前先清除舊資料 `users`
 --
 
-TRUNCATE TABLE `users`;COMMIT;
+TRUNCATE TABLE `users`;
+--
+-- 資料表的匯出資料 `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `account`, `password`, `sex`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, '小胖', '123456@aa.aa', 'a123456', '$2y$10$hCC6EDcGbyYKoG0kDtP5fOa3j5kaNSeAKe5Wl3jXp2YXjcpjdhpXq', 'M', 'DybQSIdKoBOcbZpCeglTYDwrhWigWLxKvVSyv3YmAUcTBMIbX7oL5y8Xg8fd', NULL, NULL);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

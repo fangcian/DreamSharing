@@ -5,13 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>DreamSharing我的夢境</title>
   <link rel="stylesheet" href="css/css3.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/html5shiv.js"></script>
+  <script type="text/javascript" src="  ckeditor/ckeditor.js"></script>
 </head>
 <body>
   <div class="container-fluid" id="c6">
@@ -38,25 +41,30 @@
 </div>
 <div class="container-fluid" id="c7">
   <div id="title">
-    <center><h2>梅花鹿</h2></center>
-  </div>
-  <div class="col-md-offset-8 col-md-2 icon" >
-      <ul>
-        <li><a href="mydream_edit.html"><i class="fas fa-edit"></i></a></li>
-        <li><a href="#"><i class="fas fa-trash-alt"></i></a></li>
-        <li><a href="mydream.html"><i class="fas fa-reply"></i></a></li>
-      </ul>
+    <center><h2>我的夢境</h2></center>
   </div>
 	<div class="box box-primary" id="form">
         <div class="box-body">
-					<div class="word" onclick="test()">
-              <strong><i class="fas fa-calendar-alt"></i></i> 2018/5/20</strong>
-              <br><br>
-              <p><i class="fas fa-edit"></i>
-                我在森林裡迷路，遇到一隻跟我一樣高的梅花鹿，我想要靠近看牠，
-                可是他一直走、一直走，我的步伐再快都跟不上牠。
-              </p>
-					</div>
+          <form class="" action="index.html" method="post">
+            <i class="fas fa-book"></i> <input type="text" placeholder="標題" name="" value="">
+            <i class="fas fa-calendar-alt" id="date1"></i> <input class="datepicker" placeholder="日期" id="date2"><br><br>
+            <i class="fas fa-edit"></i> <textarea name="name" id="content" rows="8" cols="40"><i class="fas fa-edit"></i>
+            </textarea>
+
+            <script>
+            ClassicEditor
+          .create( document.querySelector( '#content' ) )
+          .catch( error => {
+              console.error( error );
+          } );
+          $('.datepicker').datepicker({
+            dateFormat:"yy/mm/dd"
+          });
+            </script>
+            <br><a class="btn btn-default pull-right" href="mydream.html" role="button">保存</a>
+          </form>
         </div>
   </div>
 </div>
+</body>
+</html>

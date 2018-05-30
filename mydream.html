@@ -4,8 +4,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>DreamSharing我的夢境</title>
-	<link rel="stylesheet" href="css/css1.css">
-  <link rel="stylesheet" href="css/css2.css">
   <link rel="stylesheet" href="css/css3.css">
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -18,15 +16,15 @@
 <body>
   <div class="container-fluid" id="c6">
   <div class="row" id="first">
-    <div class="col-md-offset-2 col-md-1">
+    <div class="col-md-offset-2 col-md-1" id="home">
     <a href="index.html"><img src="image/logo1.png" alt="logo1" width="100px" height="80px"
     onmouseover="this.src='image/logo2.png';"
     onmouseout="this.src='image/logo1.png';"></a>
     </div>
     <div id="label">
-      <div class="col-md-4 col-md-offset-5 s">
+      <div class="col-md-3 col-md-offset-6 s">
           <ul>
-            <li><a href="index.html#c2">關於夢境</a></li>
+            <!-- <li><a href="index.html#c2">關於夢境</a></li> -->
             <li><a href="index.html#c3">夢享專區</a></li>
             <li><a href="#">登入</a></li>
             <li><a href="#">註冊</a></li>
@@ -44,27 +42,31 @@
   </div>
   <div class="col-md-offset-8 col-md-2 icon" >
       <ul>
-        <li><a href="#"><i class="fas fa-plus"></i></a></li>
+        <li><a href="mydream_add.html"><i class="fas fa-plus"></i></a></li>
         <li><a href="#"><i class="fas fa-trash-alt"></i></a></li>
       </ul>
   </div>
 	<div class="box box-primary" id="form">
         <div class="box-body">
 					<div class="word" onclick="test()">
-              <strong><i class="fa fa-book margin-r-5"></i>107/5/20</strong>
+              <strong><i class="fas fa-calendar-alt"></i> 2018/5/20</strong>
               <p class="text-muted" >
-                梅花鹿
+                <b>梅花鹿</b>
               </p>
 					</div>
               <hr>
-					<div class="word">
-              <strong><i class="fa fa-book margin-r-5"></i>107/5/21</strong>
-              <p class="text-muted">一條很長的蛇</p>
+					<div class="word" onclick="test()">
+              <strong><i class="fas fa-calendar-alt"></i> 2018/5/21</strong>
+              <p class="text-muted">
+								<b>一條很長的蛇</b>
+							</p>
 					</div>
               <hr>
-					<div class="word">
-              <strong><i class="fa fa-book margin-r-5"></i>107/5/22</strong>
-              <p class="text-muted">三隻死掉的小鳥</p>
+					<div class="word" onclick="test()">
+              <strong><i class="fas fa-calendar-alt"></i> 2018/5/22</strong>
+              <p class="text-muted">
+								<b>三隻死掉的小鳥</b>
+							</p>
 					</div>
         </div>
   </div>

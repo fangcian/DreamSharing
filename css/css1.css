@@ -71,12 +71,12 @@ ul{
 }
 #content1 {
   margin-left:580px;
-  margin-top:-280px;
+  margin-top:-370px;
 }
 #con{
   background-color: rgb(255,255,255);
-  height: 400px;
-  width: 700px;
+  height: 600px;
+  width: 650px;
 }
 #aboutword{
   height: 180px;
@@ -86,14 +86,14 @@ ul{
 }
 #word{
   font-family: 微軟正黑體;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 33px;
   padding-left: 45px;
   padding-top: 0px;
 }
 #feather{
-  margin-left: 600px;
-  margin-top: 15px;
+  margin-left: 550px;
+  margin-top: 5%;
 }
 #about{
 	margin-left: 42%;

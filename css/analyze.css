@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  padding: 13px 50px;
+  font-size: 22px;
+  font-family: 微軟正黑體;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #5499C7;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+  margin-top: 15px;
+  margin-left: 20%;
+}
+.button:hover {
+	background-color: #5DADE2}
+.button:active {
+  background-color: #5DADE2;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.analyze_content{
+  width: 750px;
+  height:550px;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 29.4%;
+  margin-top: -27.1%;
+}

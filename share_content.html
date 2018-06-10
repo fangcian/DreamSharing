@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DreamSharing我想解夢</title>
+	<link rel="stylesheet" href="css/share_content.css">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" id="first">
+			<div class="col-md-offset-2 col-md-1" id="home">
+			<a href="index.html"><img src="image/logo1.png" alt="logo1" width="100px" height="80px"
+			onmouseover="this.src='image/logo2.png';"
+			onmouseout="this.src='image/logo1.png';"></a>
+			</div>
+			<div id="label">
+				<div class="col-md-3 col-md-offset-6 s">
+						<ul>
+							<!-- <li><a href="index.html#c2">關於夢境</a></li> -->
+							<li><a href="index.html#c3">夢享專區</a></li>
+							<li><a href="#">登入</a></li>
+							<li><a href="#">註冊</a></li>
+							<a href="#" id="user">
+								<img src="image/femaleuser.png" alt="member" id="member">
+							</a>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+  <div class="container-fluid" id="c9">
+    <div class="box box-primary" id="form">
+          <div class="box-body">
+  					<div>
+              <p class="text-muted" >
+              <img src="image/femaleuser.png" id="user">
+              <b id="topic">梅花鹿</b>
+              <div class="col-md-offset-10 col-md-2 icon" >
+                  <ul>
+                    <li><a href="share.html"><i class="fas fa-reply"></i></a></li>
+                  </ul>
+              </div>
+
+              <b>2018/5/30</b>
+              <br><br>
+              我在森林裡迷路，遇到一隻跟我一樣高的梅花鹿，我想要靠近看牠，
+              可是他一直走、一直走，我的步伐再快都跟不上牠。
+            </p><br>
+            <button type="submit" name="keep"><i id="heart" onclick="keep()" class="far fa-heart" > 收藏</i></button>
+            <button type="submit" name="comment"><i class="far fa-comment-alt"> 回覆</i></button>
+          </div><br>
+            <div class="form-group">
+              <textarea class="form-control" style="width:630px;height:100px;" row="5" placeholder="我想說..."></textarea>
+            </div>
+            <hr>
+          </div>
+    </div>
+  </div>
+  <script language="javascript">
+  function keep(){
+    document.getElementById("heart").className="fas fa-heart";
+  }
+  </script>
+</body>
+</html>

@@ -24,8 +24,14 @@ body{
   margin-left: 20%;
 }
 .button:hover {
-	background-color: #5DADE2}
+	background-color: #5DADE2
+}
 .button:active {
+  background-color: #5DADE2;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button:focus {
   background-color: #5DADE2;
   box-shadow: 0 5px #666;
   transform: translateY(4px);

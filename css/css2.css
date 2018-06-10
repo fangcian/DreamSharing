@@ -2,11 +2,6 @@ body {
   height: 100%;
   margin: 0;
 }
-
-
-.container-fluid#c4{
-
-}
 .container-fluid#c5{
   height: 500px;
   margin-left: 5%;
@@ -79,5 +74,9 @@ ul{
   height:250px;
 }
 .toppic{
-  margin-top: 10%;
+  margin-top: 2%;
+}
+.ana{
+  margin-top: 8%;
+  margin-left: 30%;
 }

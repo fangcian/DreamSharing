@@ -1,24 +1,3 @@
-.container-fluid#c7{
-  padding-top: 8%;
-  height: 700px;
-  /* background: blue; */
-}
-.icon li{
-	font-size:20px;
-	list-style-type:none;
-	text-align: center;
-	display:inline;
-}
-.icon li a {
-	color:black;
-    padding: 15px 10px;
-    text-decoration: none;
-}
-.icon ul{
-
-	display: inline-block;
-	position:relative;
-}
 #first{
   margin-top: 0%;
   padding-top: 10px;
@@ -61,11 +40,16 @@ ul{
 	right: 56%;
 	margin-top: 1%;
 }
-#title{
-  font-family: 微軟正黑體;
+.container-fluid#c10{
+  padding-top: 4%;
+  height: 700px;
 }
-#mydream{
-    margin-left: 43%;
+#select1{
+  width: 10%;
+}
+p{
+  font-family: 微軟正黑體;
+  font-size: 18px;
 }
 #form{
   width: 650px;
@@ -73,12 +57,10 @@ ul{
   margin-top: 4%;
   font-family: 微軟正黑體;
   font-size: 16px;
-  /* background: blue; */
 }
-.mydream{
-  margin-top: 8%;
-  margin-left: 30%;
+#text1{
+  width: 30%;
 }
-#date1{
-  margin-left: 38%;
+#content{
+  width: 60%;
 }

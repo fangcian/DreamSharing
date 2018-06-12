@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DreamSharing夢境分享區</title>
+	<link rel="stylesheet" href="css/popage.css">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+  <script type="text/javascript" src="  ckeditor/ckeditor.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" id="first">
+			<div class="col-md-offset-2 col-md-1" id="home">
+			<a href="index.html"><img src="image/logo1.png" alt="logo1" width="100px" height="80px"
+			onmouseover="this.src='image/logo2.png';"
+			onmouseout="this.src='image/logo1.png';"></a>
+			</div>
+			<div id="label">
+				<div class="col-md-3 col-md-offset-6 s">
+						<ul>
+							<!-- <li><a href="index.html#c2">關於夢境</a></li> -->
+							<li><a href="index.html#c3">夢享專區</a></li>
+							<li><a href="#">登入</a></li>
+							<li><a href="#">註冊</a></li>
+							<a href="#" id="user">
+								<img src="image/femaleuser.png" alt="member" id="member">
+							</a>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+  <div class="container-fluid" id="c10">
+    <div class="box box-primary" id="form">
+      <div class="box-body">
+        <form>
+        <p>夢境類型</p>
+        <select class="form-control" id="select1">
+          <option>人</option>
+          <option>動物</option>
+          <option>靈異</option>
+          <option>事件</option>
+          <option>場景</option>
+        </select>
+        <br>
+        <p>標題</p>
+        <input type="text" class="form-control" id="text1"><br>
+        <p>夢境</p>
+        <textarea name="name" id="content" rows="8" cols="40"></textarea>
+        <script>
+        ClassicEditor
+      .create( document.querySelector( '#content' ) )
+      .catch( error => {
+          console.error( error );
+      } );
+        </script>
+        <br><a class="btn btn-default pull-right" href="share.html" role="button">分享</a>
+      </form>
+      </div>
+    </div>
+</div>
+</body>
+</html>

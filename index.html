@@ -26,8 +26,8 @@
 						<ul>
 							<!-- <li><a href="index.html#c2">關於夢境</a></li> -->
 							<li><a href="index.html#c3">夢享專區</a></li>
-							<li><a href="#">登入</a></li>
-							<li><a href="#">註冊</a></li>
+							<li><a href="login.html">登入</a></li>
+							<li><a href="register.html">註冊</a></li>
 							<a href="#">
   							<img src="image/femaleuser.png" alt="member" id="member">
 							</a>
@@ -37,9 +37,14 @@
 		</div>
 	</div>
 	<div class="container-fluid" id="c1">
-		<a href="index.html#c2"><img src="image/more1.png"
+		<a href="#" class="gomore"><img src="image/more1.png"
 		onmouseover="this.src='image/more2.png';"
 		onmouseout="this.src='image/more1.png';" id="downicon"></i></a>
+		<script type="text/javascript">
+			$('.gomore').click(function(){
+	    $('html,body').animate({scrollTop:$('#c2').offset().top},1500);
+	    });
+		</script>
 	</div>
 	<div class="container-fluid" id="c2">
 		<img src="image/about1.png" id="aboutword">
@@ -68,9 +73,16 @@
 			<a href="analyze.html" ><img src="image/我想解夢1.png" alt="analyze" id="analyze"></a>
 			<a href="share.html"><img src="image/夢境分享區1.png" alt="share" id="share"></a>
 		</div>
+		<div class="goTop">
 		<a href="index.html#c0" id="arrow"><img src="image/箭頭.png"
 		onmouseover="this.src='image/箭頭2.png';"
 		onmouseout="this.src='image/箭頭.png';"></a>
+		</div>
+		<script type="text/javascript">
+			$('.goTop').click(function(){
+	    $('html,body').animate({scrollTop:$('#c0').offset().top},1500);
+	    });
+		</script>
 	</div>
 </body>
 </html>

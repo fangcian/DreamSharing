@@ -44,27 +44,3 @@ ul{
 	right: 56%;
 	margin-top: 1%;
 }
-.container-fluid#c10{
-  padding-top: 4%;
-  height: 700px;
-}
-#select1{
-  width: 10%;
-}
-p{
-  font-family: 微軟正黑體;
-  font-size: 18px;
-}
-#form{
-  width: 650px;
-  margin-left: 430px;
-  margin-top: 4%;
-  font-family: 微軟正黑體;
-  font-size: 16px;
-}
-#text1{
-  width: 30%;
-}
-#content{
-  width: 60%;
-}

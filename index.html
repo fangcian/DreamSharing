@@ -25,10 +25,10 @@
 				<div class="col-md-3 col-md-offset-6 s">
 						<ul>
 							<!-- <li><a href="index.html#c2">關於夢境</a></li> -->
-							<li><a href="index.html#c3">夢享專區</a></li>
+							<li><a href="#" class="gomoremore">夢享專區</a></li>
 							<li><a href="login.html">登入</a></li>
 							<li><a href="register.html">註冊</a></li>
-							<a href="#">
+							<a href="basic.html">
   							<img src="image/femaleuser.png" alt="member" id="member">
 							</a>
 						</ul>
@@ -64,6 +64,14 @@
 				都可以來「夢享」尋找夢的解答！
 			</p>
 			</div>
+			<a href="#" class="gomoremore"><img src="image/moremore.png"
+			onmouseover="this.src='image/moremore2.png';"
+			onmouseout="this.src='image/moremore.png';" id="downicon2"></i></a>
+			<script type="text/javascript">
+				$('.gomoremore').click(function(){
+		    $('html,body').animate({scrollTop:$('#c3').offset().top},1500);
+		    });
+			</script>
 		</div>
 	</div>
 	<div class="container-fluid" id="c3">

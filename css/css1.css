@@ -2,6 +2,10 @@ body {
   height: 100%;
   margin: 0;
 }
+.container-fluid#c0{
+	height: 90px;
+  background-color: rgb(174, 214, 241);
+}
 .container-fluid#c1{
 	background-image: url('../image/bg1.jpg');
 	background-repeat: no-repeat;

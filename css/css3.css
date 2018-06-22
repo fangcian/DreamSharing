@@ -4,8 +4,10 @@ body {
 }
 .container-fluid#c7{
   padding-top: 8%;
-  height: 700px;
-  /* background: blue; */
+  height: 730px;
+  background-image: url('../image/mydreambg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .icon li{
 	font-size:20px;
@@ -84,4 +86,9 @@ ul{
 }
 #date1{
   margin-left: 38%;
+}
+#pic1{
+  height: 300px;
+  margin-top: -5%;
+  margin-left: 5%;
 }

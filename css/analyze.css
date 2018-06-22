@@ -60,3 +60,30 @@ body{
   margin-left: 78%;
   margin-top: -20%;
 }
+#title{
+  font-size: 20pt;
+  margin-left: 40%;
+  margin-top: -8%;
+}
+.keepbtn{
+  display: inline-block;
+  padding: 5px 8px;
+  font-size: 22px;
+  font-family: 微軟正黑體;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:#B3E5FC;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px #999;
+  margin-top: 15px;
+  margin-left: 85%;
+}
+.keepbtn:active {
+  background-color: #B3E5FC;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}

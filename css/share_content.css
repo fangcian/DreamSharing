@@ -1,3 +1,10 @@
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url('../image/sharebg1.png');
+	background-repeat: no-repesat;
+	background-size: cover;
+}
 #first{
   margin-top: 0%;
   padding-top: 10px;
@@ -95,4 +102,9 @@ button:active {
 .icon ul{
 	display: inline-block;
 	position:relative;
+}
+#pic1{
+  height: 150px;
+  margin-top: -5%;
+  margin-left: 73.5%;
 }

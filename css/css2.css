@@ -1,6 +1,10 @@
 body {
   height: 100%;
   margin: 0;
+  background-image: url('../image/bluebg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 730px;
 }
 .container-fluid#c5{
   height: 500px;

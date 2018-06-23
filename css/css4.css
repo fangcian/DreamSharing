@@ -1,6 +1,9 @@
 body {
   height: 100%;
   margin: 0;
+  background-image: url('../image/sharebg1.png');
+	background-repeat: no-repesat;
+	background-size: cover;
 }
 #first{
   margin-top: 0%;
@@ -100,5 +103,10 @@ button:focus{
 	width: 5%;
 }
 #b0{
-  margin-left:48%;
+  margin-left:1%;
+}
+#pic1{
+  height: 150px;
+  margin-top: -15%;
+  margin-left: 110%;
 }

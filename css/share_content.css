@@ -106,8 +106,10 @@ button:active {
 }
 #pic1{
   height: 150px;
-  margin-top: -5%;
-  margin-left: 73.5%;
+  position: fixed;
+  top: 80%;
+  left: 75%;
+
 }
 #comment{
   margin-top: 2%;

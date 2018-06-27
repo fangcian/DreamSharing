@@ -2,8 +2,9 @@ body {
   height: 100%;
   margin: 0;
   background-image: url('../image/sharebg1.png');
-	background-repeat: no-repesat;
+	background-repeat: no-repeat;
 	background-size: cover;
+  background-attachment: fixed;　
 }
 #first{
   margin-top: 0%;

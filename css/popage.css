@@ -73,6 +73,7 @@ p{
 }
 #pic1{
   height: 150px;
-  margin-top:1.5%;
-  margin-left: 73.5%;
+  position: fixed;
+  top: 70%;
+  left: 75%;
 }

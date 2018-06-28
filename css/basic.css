@@ -67,6 +67,7 @@ p{
 }
 #pic2{
   height: 350px;
-  margin-top: -6%;
-  margin-left: 2%;
+  position: fixed;
+  top:50%;
+  left: 3%;
 }
